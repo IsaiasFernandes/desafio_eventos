@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="evento"
+            type="com.example.appeventos.domain.model.Events" />
+
+        <variable
+            name="actions"
+            type="com.example.appeventos.presentation.eventslist.EventListViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:background="@color/white"
+        android:layout_marginTop="8dp"
+        android:paddingTop="8dp"
+        android:onClick="@{() -> actions.onSelectEvent(evento.id)}">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageEvent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:layout_marginHorizontal="8dp"
+            app:imageUrl="@{evento.image}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintDimensionRatio="H,16:9"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/titleEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{evento.title}"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="2dp"
+            app:layout_constraintStart_toStartOf="@id/imageEvent"
+            app:layout_constraintTop_toBottomOf="@id/imageEvent"
+            tools:text="Titulo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

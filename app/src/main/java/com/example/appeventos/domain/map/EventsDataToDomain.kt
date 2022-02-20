@@ -8,12 +8,11 @@ import com.example.appeventos.domain.utils.toDate
 fun EventsMapper(eventsDTO: List<EventsDTO>) : List<Events> {
     return eventsDTO.map {
         Events(
-            it.id,
-            it.date.toDate(),
-            it.image,
-            it.price.formatPrice(),
-            it.title,
-            it.description
+            id = it.id,
+            image = it.image,
+            price = it.price.formatPrice(),
+            title = it.title,
+            description = it.description
         )
     }
 }

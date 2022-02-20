@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AppEventos</string>
+    <string name="toolbar_event_list">Lista de Eventos</string>
 </resources>
