@@ -10,8 +10,8 @@ fun AppCompatImageView.imageUrl(url: String?) {
     url?:return
     Glide.with(this)
         .load(url)
-        .placeholder(R.drawable.ic_no_photos)
-        .error(R.drawable.ic_no_photos)
-        .fallback(R.drawable.ic_no_photos)
+        .placeholder(R.drawable.not_found)
+        .error(R.drawable.not_found)
+        .fallback(R.drawable.not_found)
         .into(this)
 }

@@ -1,8 +1,6 @@
 package com.example.appeventos.presentation.eventslist.adapter
 
-import android.util.Log
 import android.view.ViewGroup
-import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
@@ -11,7 +9,6 @@ import com.example.appeventos.databinding.ItemEventBinding
 import com.example.appeventos.domain.model.Events
 import com.example.appeventos.presentation.eventslist.EventListViewModel
 import com.example.appeventos.util.extension.inflate
-import dagger.hilt.android.AndroidEntryPoint
 
 class EventListAdapter(private val action : EventListViewModel) : ListAdapter<Events, EventListAdapter.EventHolder>(DiffCallback) {
 

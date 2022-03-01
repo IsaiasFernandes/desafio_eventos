@@ -3,11 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1575" />
+        <entry key="app/src/main/res/drawable/ic_check_circle_icon.xml" value="0.1575" />
+        <entry key="app/src/main/res/drawable/ic_no_image.xml" value="0.206" />
         <entry key="app/src/main/res/drawable/ic_no_photos.xml" value="0.1575" />
-        <entry key="app/src/main/res/layout/event_list_fragment.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/item_event.xml" value="0.16979166666666667" />
+        <entry key="app/src/main/res/drawable/ic_share.xml" value="0.206" />
+        <entry key="app/src/main/res/layout/checkin_fragment.xml" value="0.33697916666666666" />
+        <entry key="app/src/main/res/layout/event_details_fragment.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/event_list_fragment.xml" value="0.27936096718480136" />
+        <entry key="app/src/main/res/layout/item_event.xml" value="0.25" />
         <entry key="app/src/main/res/layout/main_activity.xml" value="0.33697916666666666" />
         <entry key="app/src/main/res/layout/main_fragment.xml" value="0.25" />
+        <entry key="app/src/main/res/menu/appbar_event_details.xml" value="0.33697916666666666" />
       </map>
     </option>
   </component>
@@ -16,5 +23,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.33697916666666666" />
+      </ProjectState>
+    </option>
   </component>
 </project>
